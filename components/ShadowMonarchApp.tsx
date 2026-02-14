@@ -54,7 +54,7 @@ const VIAB_COLOR = { HIGH: "#39FF14", MEDIUM: "#FFD700", LOW: "#FF6A00", NONE: "
 
 const ESSENTIAL_TOOLS = new Set(["Cursor", "Framer", "GitHub", "Python", "Claude Projects", "v0.dev"]);
 
-const makeShadow = (num, data = {}) => ({
+const makeShadow = (num: number, data: Record<string, any> = {}) => ({
   num,
   id: `SH-${String(num).padStart(2, "0")}`,
   name: data.name || "[VACANT]",
